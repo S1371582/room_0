@@ -1,7 +1,8 @@
 # 🕹️ room_0 
 
 
-![readme_cover.png](assets/images/readme_cover.png)
+<img src="assets/images/readme_cover.png" alt="Portada Room 0" width="600">
+
 
 ### Demo online
 
