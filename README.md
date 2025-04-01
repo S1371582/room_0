@@ -1,12 +1,7 @@
 # 🕹️ room_0 
 
-Room 0 es una aventura gráfica experimental e interactiva en blanco y negro, construida a partir de símbolos, ecos y fragmentos.
-Despiertas en una habitación que no recuerdas. Cada objeto parece tener una intención. Nada es exactamente lo que ves. ¿Estás soñando? ¿O alguien más está soñando por ti?
-Explorá, tocá, enciende, apaga. Revela mensajes ocultos, zonas sensibles al cursor, y accede a fragmentos de identidad que parecen venir de otro tú.
 
-Esta experiencia se desarrolla enteramente en HTML, CSS y JavaScript.
-
-![room.png](assets/images/room.png)
+![readme_cover.png](assets/images/readme_cover.png)
 
 ### Demo online
 
