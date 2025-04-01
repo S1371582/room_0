@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habitación 0</title>
+  <link rel="stylesheet" href="room.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/astronauta.png">
+</head>
+<body>
+  <div class="background">
+    <!-- Zonas clicables -->
+    <a href="#pantalla" class="click-zone pantalla">Pantalla</a>
+    <a class="click-zone cuadro interactuar-cuadro">Cuadro</a>
+    <a href="#cajones" class="click-zone cajones">Cajones</a>
+    <a href="#ventana" class="click-zone ventana">Ventana</a>
+    <a href="#puerta" class="click-zone puerta">Puerta</a>
+    <!-- <a href="#luz" class="click-zone luz">Luz</a> -->
+    <a class="click-zone luz apagar-luz">Luz</a>
+
+    <div class="pista-codigo" id="pista-codigo">
+      <p>CÓDIGO: <strong>#374X</strong></p>
+    </div>
+    
+
+  </div>
+  <div id="apagado" class="apagado"></div>
+
+  <div class="narrativa" id="intro-text">
+    <div class="texto">
+      <p>Despiertas... o crees hacerlo.</p>
+      <p>La habitación no es familiar, pero tu cuerpo reacciona como si ya hubiera estado aquí antes.</p>
+      <p>Todo parece dispuesto con intención. Cada objeto te observa con la calma de quien ya te conoce.</p>
+      <p>En la pantalla parpadea una línea:</p>
+      <p><em>“Acceso denegado. Se requiere identidad.”</em></p>
+      <p>Pero... ¿qué identidad? ¿La tuya? ¿La del que estuvo antes que tú?</p>
+      <button onclick="ocultarIntro()">Entiendo</button>
+    </div>
+  </div>
+
+  <div class="terminal" id="terminal">
+    <div class="terminal-box">
+      <p><span class="blink">█</span> Introduce el código de acceso:</p>
+      <input type="text" id="codigoInput" maxlength="10" placeholder="Ej: #XXXX" />
+      <button onclick="verificarCodigo()">Enviar</button>
+      <div id="respuestaTerminal"></div>
+      <button class="cerrar-btn" onclick="cerrarTerminal()">Cerrar</button>
+    </div>
+  </div>
+
+  <div class="puerta-msg" id="puerta-msg">
+    <div class="puerta-box">
+      <p>La puerta sigue cerrada.<br>Falta algo...</p>
+      <button onclick="cerrarPuertaMsg()">Ok</button>
+    </div>
+  </div>
+
+  <div class="cajon-msg" id="cajon-msg">
+    <div class="cajon-box">
+      <p>Has abierto el cajón y encontrado una tarjeta magnética.<br>
+      También hay una nota que dice:<br>
+      <p><em>
+        No estás despierto.<br>
+        Solo sueñas que despertaste.<br><br>
+        Tu doble ya cruzó.<br>
+        Nada es lo que recuerdas.
+      </em></p>
+      <button onclick="cerrarCajon()">Cerrar</button>
+    </div>
+  </div>
+
+  <div class="vista-ventana" id="vista-ventana">
+    <img src="assets/images/vista_ventana.png" alt="Exterior" />
+    <div class="instruccion-volver">Haz clic para volver</div>
+  </div>
+  
+  
+    
+  <audio id="sonido-flash" src="assets/audio/flash.mp3" preload="auto"></audio>
+  <script src="scripts/room.js"></script>
+</body>
+</html>
