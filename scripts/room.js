@@ -85,7 +85,7 @@ const gameState = {
     e.preventDefault();
   
     if (gameState.pantallaDesbloqueada && gameState.tarjetaObtenida) {
-      window.location.href = 'exterior.html';
+      window.location.href = 'outer_space.html';
     } else {
       document.getElementById('puerta-msg').style.display = 'flex';
     }
