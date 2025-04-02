@@ -1,50 +1,35 @@
+
 body, html {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background: black;
-    cursor: url('assets/images/astronauta_invertido.png'), auto;
-  }
-  
-  .espacio {
-    width: 100%;
-    height: 100%;
-    background-image: url('assets/images/espacio.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: center;
-    image-rendering: pixelated;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    cursor: url('assets/images/astronauta_invertido.png'), auto;
-  }
-  
-  .espacio {
-    width: 100vw;
-    height: 100vh;
-    background: url('assets/images/espacio.png') no-repeat center center;
-    background-size: cover;
-    position: relative;
-  }
-  
-  .luna-zona {
-    position: absolute;
-    top: 1%;        
-    left: 23%;
-    width: 160px;
-    height: 150px;
-    cursor: url('assets/images/astronauta.png'), auto;
-    background: transparent;  
-    border: none;             
-    z-index: 10;
-  }
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+  cursor: url('assets/images/astronauta_invertido.png'), auto;
+}
+
+.espacio {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url('assets/images/espacio.png') no-repeat center center;
+  background-size: contain; /* Mostrar imagen completa */
+  image-rendering: pixelated;
+}
+
+/* Zona interactiva sobre la luna */
+.luna-zona {
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  width: 20vw;
+  height: 20vw;
+  cursor: url('assets/images/astronauta.png'), auto;
+  background: transparent;
+  border: none;
+  z-index: 10;
+}
 
 /* Temblor visual */
 .espacio.temblor {
@@ -72,22 +57,29 @@ body, html {
   transition: opacity 1s ease;
   z-index: 1000;
 }
+
 .mensaje-espacio.visible {
   opacity: 1;
 }
 
+/* Indicador para girar dispositivo */
+@media (orientation: portrait) {
+  .gira-dispositivo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    color: white;
+    font-family: 'Press Start 2P', monospace;
+    padding: 20px;
+    z-index: 9999;
+    text-align: center;
+  }
+}
 
-
- 
-  
-  
-
-/* Escala responsive para móviles */
-@media (max-width: 768px) {
-  .luna-zona {
-    width: 20vw;
-    height: 20vw;
-    top: 15vh;
-    left: 40vw;
+@media (orientation: landscape) {
+  .gira-dispositivo {
+    display: none;
   }
 }
