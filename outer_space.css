@@ -68,8 +68,8 @@ body, html {
   opacity: 1;
 }
 
-/*
-/* Escala responsive para móviles 
+
+/* Escala responsive para móviles */
 @media (max-width: 768px) {
   .luna-zona {
     width: 20vw;
@@ -77,4 +77,4 @@ body, html {
     top: 15vh;
     left: 40vw;
   }
-}*/
+}
