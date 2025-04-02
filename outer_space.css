@@ -75,7 +75,7 @@ body, html {
     width: 30vw;
     height: 30vw;
     top: 30vh;
-    left: 50vw;
+    left: 20vw;
     background: rgba(255, 255, 255, 0.1); /* para que puedas verla temporalmente */
     border: 2px dashed white; /* debug visual */
   }
