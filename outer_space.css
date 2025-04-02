@@ -79,3 +79,13 @@ body, html {
  
   
   
+
+/* Escala responsive para móviles */
+@media (max-width: 768px) {
+  .luna-zona {
+    width: 20vw;
+    height: 20vw;
+    top: 15vh;
+    left: 40vw;
+  }
+}
