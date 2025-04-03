@@ -28,7 +28,7 @@ body, html {
   
   .luna-zona {
     position: absolute;
-    top: 15%; /* Ajustalo según la posición real de la luna */
+    top: 15%; /* Ajustar según la posición real de la luna */
     left: 30%;
     width: 10vw;
     height: 10vw;
@@ -78,7 +78,7 @@ body, html {
     left: 20vw;
     background: transparent;
     border: none;
-    /*background: rgba(255, 255, 255, 0.1); /* para que puedas verla temporalmente */
+    /*background: rgba(255, 255, 255, 0.1); /* para ver temporalmente */
     /*border: 2px dashed white; /* debug visual */
   }
 }

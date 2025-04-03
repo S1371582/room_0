@@ -5,7 +5,6 @@ const gameState = {
     tarjetaObtenida: false,
   };
 
- 
   // Luz
   document.querySelector('.apagar-luz').addEventListener('click', function (e) {
     e.preventDefault();
